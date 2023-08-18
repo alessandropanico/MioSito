@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Panico</title>
+
+    <link rel="stylesheet" href="./css/style.css"> <!-- Collegamento al file CSS personalizzato -->
+    <link rel="stylesheet" href="./css/style3.css"> <!-- Collegamento al file CSS personalizzato -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-U6ALlRRGhNtk2EiI8lku5ZfrpNAdyTCMp9UZQKv3QVB4AzJS+9x2pOx93OpfRk9TbqoXHltxbkIPoMCX52EOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-U6ALlRRGhNtk2EiI8lku5ZfrpNAdyTCMp9UZQKv3QVB4AzJS+9x2pOx93OpfRk9TbqoXHltxbkIPoMCX52EOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+
+    <!--FAVICON (DA FARE)-->
+    <link rel="icon" type="image/png" href="./immagini/FAVICON.png">
+
+</head>
+
+<body style="background-color: rgb(26, 26, 26);">
+
+    <!--VIDEO SFONDO-->
+    <video autoplay muted loop id="myVideo">
+        <source src="./video/2.mp4" type="video/mp4">
+    </video>
+
+    <!--LOGO-->
+    <header>
+        <div class="d-flex justify-content-center">
+            <img src="./immagini/LOGO SUPREMO.png" alt="LOGO" style="width: 700px;  position: absolute;">
+        </div>
+
+        <!--SOCIAL-->
+        <div
+            style="float: right; margin-right: 10px ;margin-top: 300px;color:white;position: relative; font-size: 3em;">
+            <a style="transition: none; transform: none !important; color:white"
+                href="https://www.linkedin.com/in/alessandro-panico-4b974b272/">
+                <i class="fab fa-linkedin-in icon"></i></a>
+
+            <a style="transition: none; transform: none !important; color:white"
+                href="https://www.instagram.com/_nakamayt/?hl=it">
+                <i class="fab fa-instagram icon"></i></a>
+
+            <a style="transition: none; transform: none !important; color:white"
+                href="https://www.youtube.com/channel/UC8rQxh_mjGtKiBQJkixhYGQ">
+                <i class="fab fa-youtube icon"></i></a>
+        </div>
+        <!--NAVBAR-->
+        <div>
+            <nav>
+                <ul>
+                    <li><em><a class="outline-text" href="index.html">HOME</a></em></li>
+                    <li><em><a class="outline-text" href="chisono.html">CHI SONO</a></em></li>
+                    <li><em><a class="outline-text" href="contatti.html">CONTATTI</a></em></li>
+                    <li><em><a class="outline-text" href="#" id="progetti-link">PROGETTI</a></em></li>
+
+                </ul>
+                <!-- Elemento per il menu a tendina -->
+                <div class="dropdown" id="progetti-dropdown">
+                    <ul>
+                        <li><em><a href="./pagine/java.html">JAVA</a></em></li>
+                        <li><em><a href="./pagine/spring.html">SPRING</a></em></li>
+                        <li><em><a href="./pagine/javascript.html">JAVASCRIPT</a></em></li>
+                        <li><em><a href="./pagine/angular.html">ANGULAR</a></em></li>
+
+
+                    </ul>
+                </div>
+
+
+            </nav>
+        </div>
+
+    </header>
+
+    <article style="margin-top: 70px;">
+
+
+
+        <div class="d-flex justify-content-center align-items-center" >
+            <div class="black-div">
+                <div class="title">
+                    CONTATTI
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <div class="container text-white mt-4">
+                        <div class="contact-item">
+                            <div>
+                                <i class="fab fa-whatsapp icon" style="font-size: 2em;"></i>
+                            </div>
+                            <div class="contact-text">
+                                WhatsApp: +39 366 462 9084
+                            </div>
+                        </div>
+
+
+
+                        <div class="contact-item">
+                            <div>
+                                <i class="fab fa-linkedin-in icon" style="font-size: 2em;"></i>
+                            </div>
+                            <div class="contact-text">
+                                Linkedin: Alessandro Panico
+                            </div>
+                        </div>
+
+
+
+                        <div class="contact-item">
+                            <div>
+                                <i class="fab fa-google icon" style="font-size: 2em;"></i>
+                            </div>
+                            <div class="contact-text">
+                                Gmail: panico.alessandro1995@gmail.com
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div>
+                                <i class="fab fa-instagram icon" style="font-size: 2em;"></i>
+                            </div>
+                            <div class="contact-text">
+                                Instagram: _nakamayt
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div>
+                                <i class="fab fa-youtube icon" style="font-size: 2em;"></i>
+                            </div>
+                            <div class="contact-text">
+                                YouTube: Nakama
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+    </article>
+
+
+    <article style="margin-top: 70px;">
+
+    <div class="d-flex justify-content-center">
+        <div class="simboli-container"
+            style="background-color: black; border:solid 2px; ; border-color: white ; height: 35px;">
+            <div>
+                <img src="./immagini/stelle.png" style= "width: 100px">
+            </div>
+
+            <div>
+                <img src="./immagini/linea.png">
+            </div>
+
+            <div>
+                <img src="./immagini/stelle.png" style= "width: 100px">
+            </div>
+        </div>
+    </div>
+</article>
+
+    
+    <article style="margin-top: 50px;">
+        <div class="d-flex justify-content-center">
+            <div
+                style="background-color: #942bd0; width: 700px; height: 100px; border-radius: 100px; display: flex; align-items: center; justify-content: center;">
+                <div style="font-family: Akira; color: black; font-size: 20px; text-align: center;">
+                    PUOI INIZIARE A SCRIVERMI ANCHE DA QUI
+                </div>
+            </div>
+        </div>
+
+        <!--TEXTAREA EMAIL-->
+        <div class="d-flex justify-content-center">
+            <div style="margin-top: 30px;">
+                <textarea id="message"
+                    style="width: 700px; height: 250px; color: white; background-color: black;
+              border: solid 2px; border-color: white; border-radius: 20px; padding: 10px; font-family:  Helvetica, sans-serif; font-size: 20px;"
+                    placeholder="Invia tramite e-mail..."></textarea>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div style="margin-top: 20px;">
+                <button class="btn-toolset" style="font-family: Akira;" onclick="sendEmail()">INVIA</button>
+            </div>
+        </div>
+    </article>
+
+<article style="margin-top: 30px;"></article>
+
+</body>
+<script src="./js/lib.js"></script>
+
+</html>

@@ -1,0 +1,36 @@
+.black-div {
+    background-color: black;
+    border: solid 2px;
+    border-color: white;
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  
+  .title {
+    font-family: Akira;
+    font-size: 70px;
+    color: #942bd0;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 15px; /* Spaziatura tra le icone e le parole associate */
+  }
+  
+  .contact-text {
+    margin-left: 10px;
+  }
+  
+
+ 

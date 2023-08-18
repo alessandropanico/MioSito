@@ -1,0 +1,19 @@
+/* Inserire questa regola per il contenitore con classe "centered" */
+.centered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Aggiunge spazio tra i blocchi */
+}
+
+/* Aggiungere questa regola per i blocchi con classe "col" */
+.col {
+  flex: 0 0 calc(25% - 20px); /* Occupa il 25% della larghezza meno lo spazio tra i blocchi */
+}
+
+/* Inserire questa regola per i blocchi con classe "mio" */
+
+
+
+

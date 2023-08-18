@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Panico</title>
+
+    <link rel="stylesheet" href="../css/progetti.css"> <!-- Collegamento al file CSS personalizzato -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Collegamento al file CSS personalizzato -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-U6ALlRRGhNtk2EiI8lku5ZfrpNAdyTCMp9UZQKv3QVB4AzJS+9x2pOx93OpfRk9TbqoXHltxbkIPoMCX52EOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-U6ALlRRGhNtk2EiI8lku5ZfrpNAdyTCMp9UZQKv3QVB4AzJS+9x2pOx93OpfRk9TbqoXHltxbkIPoMCX52EOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!--FAVICON (DA FARE)-->
+    <link rel="icon" type="image/png" href="../immagini/FAVICON.png">
+
+</head>
+
+<body style="background-color: rgb(26, 26, 26);">
+
+    <!--VIDEO SFONDO-->
+    <video autoplay muted loop id="myVideo">
+        <source src="../video/2.mp4" type="video/mp4">
+    </video>
+
+    <!--LOGO-->
+    <header>
+        <div class="d-flex justify-content-center">
+            <img src="../immagini/LOGO SUPREMO.png" alt="LOGO" style="width: 700px;  position: absolute;">
+        </div>
+
+        <!--SOCIAL-->
+
+        <div
+            style="float: right; margin-right: 10px ;margin-top: 300px;color:white;position: relative; font-size: 3em;">
+            <a style="transition: none; transform: none !important; color:white"
+                href="https://www.linkedin.com/in/alessandro-panico-4b974b272/">
+                <i class="fab fa-linkedin-in icon"></i></a>
+
+            <a style="transition: none; transform: none !important; color:white"
+                href="https://www.instagram.com/_nakamayt/?hl=it">
+                <i class="fab fa-instagram icon"></i></a>
+
+            <a style="transition: none; transform: none !important; color:white"
+                href="https://www.youtube.com/channel/UC8rQxh_mjGtKiBQJkixhYGQ">
+                <i class="fab fa-youtube icon"></i></a>
+        </div>
+
+        <!--NAVBAR-->
+
+        <div>
+            <nav>
+                <ul>
+                    <li><em><a class="outline-text" href="../index.html">HOME</a></em></li>
+                    <li><em><a class="outline-text" href="../chisono.html">CHI SONO</a></em></li>
+                    <li><em><a class="outline-text" href="../contatti.html">CONTATTI</a></em></li>
+                    <li><em><a class="outline-text" href="#" id="progetti-link">PROGETTI</a></em></li>
+
+                </ul>
+                <!-- Elemento per il menu a tendina -->
+                <div class="dropdown" id="progetti-dropdown" style="z-index: 100;">
+                    <ul>
+                        <li><em><a href="java.html">JAVA</a></em></li>
+                        <li><em><a href="spring.html">SPRING</a></em></li>
+                        <li><em><a href="javascript.html">JAVASCRIPT</a></em></li>
+                        <li><em><a href="angular.html">ANGULAR</a></em></li>
+
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+
+
+    <div class="container" style="margin-top: 70px;">
+
+        <div style="background-color: black;   height: 250px; border: solid 2px; border-color: white;">
+                <div class="d-flex justify-content-center">
+                    <div style="font-family: EX; font-size: 90px; color: transparent ;  
+                -webkit-text-stroke: 2px #942bd0; position: absolute; z-index: 1; ; margin-left: 10px;">
+                        PROGETTI
+                    </div>
+
+                    <div
+                        style="font-family: EX; font-size: 90px; color: white ; position: absolute; margin-top: 10px; ">
+                        PROGETTI
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center" style="margin-top: 100px;">
+                    <div style="font-family: EX; font-size: 90px; color: transparent ;  
+                -webkit-text-stroke: 2px #942bd0; position: absolute; z-index: 1; ; margin-left: 10px;">
+                        JAVASCRIPT
+                    </div>
+
+                    <div
+                        style="font-family: EX; font-size: 90px; color: white ; position: absolute; margin-top: 10px; ">
+                        JAVASCRIPT
+                    </div>
+                </div>
+        </div>
+
+
+        <!--DIV ESERCIZI-->
+
+        <article style="margin-top: 50px;">
+
+            <div style="background-color: black; border: solid 2px; border-color: white; height: 900px; padding: 20px;">
+                <div style="color: white; font-size: 20px; font-family: Helvetica, sans-serif;">
+
+                    <div style="color: #942bd0; font-family: EX; font-size: 70px; text-align: justify;">ESERCIZI</div>
+                    <p>In questa sezione troverete tutti i programmi sviluppati con il linguaggio "Javascript".
+                        Ovviamente ci sarà molto HTML e CSS. Considerate che questo sito stesso è già un esercizio.</p>
+
+                      <p>All'interno dei file.zip da scaricare è presente un file chiamato "TRACCIA" dove spiegherò
+                        l'esercizio in questione.
+                        La sezione è in continuo aggiornamento...</p>
+                    
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <img src="../immagini/stelle.png" style="margin-top: 20px ;width: 250px;">
+                </div>
+
+
+                <div class="centered" style="font-family: Akira; margin-top: 20px; font-size: 14px;">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mio">
+                                <p>Operazioni aritmetiche
+                                    <a class="scarica" href="../javascript/OperazioniAritmetiche.zip" download>Scarica</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mio">
+                                <p>Calcolatrice
+                                    <a class="scarica" href="../javascript/Calcolatrice.zip" download>Scarica</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mio">
+                                <p>Esercizio Select
+                                    <a class="scarica" href="../javascript/EsercizioSelect.zip" download>Scarica</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mio">
+                                <p>Sito Web<br>
+                                    <a class="scarica" href="../javascript/SitoWeb.zip" download>Scarica</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECONDA RIGA -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="mio">
+                                <p>Chiamata XML
+                                    <a class="scarica" href="../javascript/ChiamataXML.zip" download>Scarica</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mio">
+                                <p>Chat<br>
+                                    <a class="scarica" href="../javascript/Chat.zip" download>Scarica</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <div class="col">
+                            <div class="mio">
+                                <p>Pokedex<br>
+                                    <a class="scarica" href="../javascript/Pokedex.zip" download>Scarica</a>
+                                </p>
+                            </div>
+                        </div> -->
+                       
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+
+    </article>
+
+    </div>
+
+    <article style="margin-top: 50px;">
+
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="../js/lib.js"></script>
+
+</html>

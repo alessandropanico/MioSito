@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Panico</title>
+
+    <link rel="stylesheet" href="./css/style.css"> <!-- Collegamento al file CSS personalizzato -->
+    <link rel="stylesheet" href="./css/style2.css"> <!-- Collegamento al file CSS personalizzato -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-U6ALlRRGhNtk2EiI8lku5ZfrpNAdyTCMp9UZQKv3QVB4AzJS+9x2pOx93OpfRk9TbqoXHltxbkIPoMCX52EOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-U6ALlRRGhNtk2EiI8lku5ZfrpNAdyTCMp9UZQKv3QVB4AzJS+9x2pOx93OpfRk9TbqoXHltxbkIPoMCX52EOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!--FAVICON (DA FARE)-->
+    <link rel="icon" type="image/png" href="./immagini/FAVICON.png">
+
+</head>
+
+<body style="background-color: rgb(26, 26, 26);">
+
+    <!--VIDEO SFONDO-->
+    <video autoplay muted loop id="myVideo">
+        <source src="./video/2.mp4" type="video/mp4">
+    </video>
+
+    <!--LOGO-->
+
+    <header>
+        <div class="d-flex justify-content-center">
+            <img src="./immagini/LOGO SUPREMO.png" alt="LOGO" style="width: 700px;  position: absolute;">
+        </div>
+
+
+
+        <!--SOCIAL-->
+        <div
+            style="float: right; margin-right: 10px ;margin-top: 300px;color:white;position: relative; font-size: 3em;">
+            <a style="transition: none; transform: none !important; color:white"
+                href="https://www.linkedin.com/in/alessandro-panico-4b974b272/">
+                <i class="fab fa-linkedin-in icon"></i></a>
+
+            <a style="transition: none; transform: none !important; color:white"
+                href="https://www.instagram.com/_nakamayt/?hl=it">
+                <i class="fab fa-instagram icon"></i></a>
+
+            <a style="transition: none; transform: none !important; color:white"
+                href="https://www.youtube.com/channel/UC8rQxh_mjGtKiBQJkixhYGQ">
+                <i class="fab fa-youtube icon"></i></a>
+        </div>
+        <!--NAVBAR-->
+        <div>
+            <nav>
+                <ul>
+                    <li><em><a class="outline-text" href="index.html">HOME</a></em></li>
+                    <li><em><a class="outline-text" href="chisono.html">CHI SONO</a></em></li>
+                    <li><em><a class="outline-text" href="contatti.html">CONTATTI</a></em></li>
+                    <li><em><a class="outline-text" href="#" id="progetti-link">PROGETTI</a></em></li>
+
+                </ul>
+                <!-- Elemento per il menu a tendina -->
+                <div class="dropdown" id="progetti-dropdown">
+                    <ul>
+                        <li><em><a href="./pagine/java.html">JAVA</a></em></li>
+                        <li><em><a href="./pagine/spring.html">SPRING</a></em></li>
+                        <li><em><a href="./pagine/javascript.html">JAVASCRIPT</a></em></li>
+                        <li><em><a href="./pagine/angular.html">ANGULAR</a></em></li>
+
+
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+
+    <article style="margin-top: 40px;">
+
+        <div class="d-flex justify-content-center">
+
+            <div style="font-family: EX; font-size: 100px; color: white;">
+                ALESSANDRO
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div style="font-family: EX; font-size: 80px; margin-top: 0px;color: transparent ;  
+            -webkit-text-stroke: 2px white;    line-height: 0.3; ">
+                PANICO
+            </div>
+        </div>
+
+
+    </article>
+
+    <div class="d-flex justify-content-center" style="margin-top: 50px;">
+
+        <article>
+
+            <div class="container">
+                <div class="image-container">
+                    <img src="./immagini/immagineProfilo.jpg">
+                    <div class="black-container1">
+                        <div
+                            style="color:#942bd0; font-family: Akira; font-size: 25px; text-align: justify; margin-left: 20px; margin-top: 10px;">
+                            CHI SONO
+                            <div style="background-color: #942bd0; height: 3px; margin-right: 20px;"></div>
+                        </div>
+                        <div style="padding: 20px; text-align: justify; font-family: Helvetica, sans-serif;">
+                            <p> Salve! Mi chiamo Alessandro Panico (in arte Nakama) e sono nato il 22/09/95. Sono un
+                                ragazzo con tanta
+                                voglia di lavorare ed imparare. Ho avuto a che fare con la programmazione dalle scuole
+                                superiori, tuttavia
+                                per eventi imprevisti
+                                non mi sono subito accostato con grande passione a questa materia. Passano gli anni, ho
+                                fatto tante esperienze
+                                (troppe) e, dopo tanto, alla fine giungo alla conclusione che qui, proprio mentre scrivo
+                                queste righe, ho trovato
+                                la pace. Si, perché prima mi sentivo schiavo di un qualcosa del quale non riuscivo a
+                                liberarmi. Era snervante. Nonostante
+                                tutto posso dire che quelle esperienze non sono state del tutto negative, anzi! Sono
+                                ancora più preparato per poter lavorare
+                                in questo ambito. Voglio conoscere, imparare, crescere. Perché nella vita non si è mai
+                                arrivati ad un massimo livello e questo
+                                e senza ombra di dubbio il miglior mindset per poter iniziare!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="black-container2">
+                    <div
+                        style="color:#942bd0; font-family: Akira; font-size: 25px; text-align: justify; margin-left: 20px; margin-top: 10px;">
+                        OBIETTIVI
+                        <div style="background-color: #942bd0; height: 3px; margin-right: 20px;"></div>
+                    </div>
+                    <div style="padding: 20px; text-align: justify; font-family: Helvetica, sans-serif;">
+                        <p>
+                            Come già detto sopra ho voglia di crescere. Ma in che modo? Beh è ovvio: voglio iniziare a
+                            lavorare in una azienda seria, e sottolineo <u>seria</u> perché io, come tanti altri ragazzi
+                            là fuori
+                            siamo stanchi di perdere tempo. Con questo non sto dicendo che sono il miglior programmatore
+                            del mondo nè
+                            che possa risolvere in un secondo ogni problema ma ho tanto desiderio di progredire e di
+                            crescere.
+                            Oltre al fatto che ho già commisioni per siti web (e questo può far capire che mi stia
+                            impegnando), ho voglia
+                            di imparare altri linguaggi di programmazione. Il mio scopo è arrivare in alto e un giorno
+                            essere un senior.
+                            Ed è per questo che per il momento attuale ho bisogno di lavorare in una azienda. Per
+                            potermi formare al meglio che posso e
+                            non mi fermerò fino a quando non avrò ottenuto ciò che voglio perché le cose che non posso
+                            fare sono realmente poche.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+    </div>
+
+    <section style="margin-top: 100px;">
+
+
+        <div class="d-flex justify-content-center">
+            <div
+                style="background-color: #942bd0; border-radius: 100px; width: 900px; height: 200px; display: flex; align-items: center;">
+                <div style="width: 100px; margin-left: 30px;">
+                    <img src="./immagini/baglioreNero.png" style="width: 100px;">
+                </div>
+                <div style="color: black; font-family: EX; text-align: center; font-size: 50px; flex: 1;">
+                    ALLORA? TI STO PIACENDO?
+                </div>
+                <div style="width: 100px; margin-right: 30px;">
+                    <img src="./immagini/baglioreNero.png" style="width: 100px;">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <article >
+
+        <div class="d-flex justify-content-center">
+
+            <div style="margin-top:30px">
+                <div
+                    style="background-color: #942bd0; border-radius: 100px; width: 450px; height: 100px; display: flex; align-items: center;">
+                    <div style="color: black; font-family: EX; text-align: center; font-size: 40px; flex: 1;">
+                        <a href="contatti.html" class="scarica">
+                            CONTATTAMI
+                    </a>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <section style="margin-top: 50px;"></section>
+
+</body>
+
+<script src="./js/lib.js"></script>
+
+</html>

@@ -1,0 +1,69 @@
+/*FONT*/
+@font-face {
+    font-family: "Akira"; /* Sostituisci con il nome che vuoi assegnare al font */
+    src: url("../fonts/MW/ModernWarfare-8MM6z.ttf"); /* Percorso del file del font */
+  }
+
+ 
+  @font-face {
+    font-family: "EX"; /* Sostituisci con il nome che vuoi assegnare al font */
+    src: url("../fonts/EXPANDED/Akira\ Expanded\ Demo.otf"); /* Percorso del file del font */
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container > div {
+    margin-top: 50px;
+}
+
+.image-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.image-container img {
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+}
+
+
+.black-container1 {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    width: 700px;
+    height: 400px;
+    margin-left: 100px;
+    position: relative;
+
+}
+
+.black-container2 {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    width: 700px;
+    height: 400px;
+    margin-left: 350px;
+    position: relative;
+}
+
+
+/*PENTAGONO*/
+
+/* .pentagon-1 {
+    position: relative;
+    width: 157.5px;
+    height: 150px;
+    background-image: url("../immagini/immagineProfilo.jpg");
+    background-size: cover; 
+    clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+  } */
+    
