@@ -14,9 +14,7 @@
     }
 
     #logo {
-        width: 30px;
-        margin-left: 0px;
-        margin-top: 0px;
+        display: block;
     }
 
     /* Centra i social nell'header */
@@ -238,7 +236,7 @@
         border-radius: 30px 10px 30px 10px;
         ;
         background-color: #942bd0;
-        width: 60px;
+        width: 600px;
     }
 
     .arte {
@@ -246,7 +244,7 @@
         border-radius: 30px 10px 30px 10px;
         ;
         background-color: #942bd0;
-        width: 40px;
+        width: 400px;
     }
 
     .forza {
@@ -254,7 +252,7 @@
         border-radius: 30px 10px 30px 10px;
         ;
         background-color: #942bd0;
-        width: 70px;
+        width: 700px;
     }
 
     .successo {
