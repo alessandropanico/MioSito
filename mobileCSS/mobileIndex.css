@@ -31,27 +31,27 @@
     /* Stile per la navbar su dispositivi mobili */
     nav {
         text-align: center;
-      }
-      
-      nav ul {
+    }
+
+    nav ul {
         margin: 10px 0;
         padding: 0;
         list-style: none;
-      }
-      
-      nav li {
+    }
+
+    nav li {
         display: inline-block;
         margin: 0;
         padding: 0;
-      }
-      
-      nav a {
+    }
+
+    nav a {
         display: block;
         padding: 10px;
         text-decoration: none;
         color: white;
-      }
-      
+    }
+
 
     .outline-text {
         font-size: 12px;
@@ -127,17 +127,25 @@
     }
 
     /* Riduci le dimensioni dei titoli */
-    .benvenuto, .rondo1, .rondo3, .successo {
+    .benvenuto,
+    .rondo1,
+    .rondo3,
+    .successo {
         font-size: 30px;
     }
 
     /* Riduci la dimensione del testo */
-    .testo, .rondo2, .rondo4, .testonelviola {
+    .testo,
+    .rondo2,
+    .rondo4,
+    .testonelviola {
         font-size: 16px;
     }
 
     /* Riduci la dimensione delle icone dei social */
-    #linkedin, #instagram, #youtube {
+    #linkedin,
+    #instagram,
+    #youtube {
         font-size: 1.5em;
     }
 
@@ -153,19 +161,26 @@
     }
 
     /* Riduci la dimensione delle immagini nella sezione "scrollDiv" */
-    #scrollImg, #stella1, #stella2, #stella3, #stella4 {
+    #scrollImg,
+    #stella1,
+    #stella2,
+    #stella3,
+    #stella4 {
         width: 80px;
     }
 
     /* Centra il testo nella sezione "scrollDiv" */
-    .nelviola, .testonelviola {
+    .nelviola,
+    .testonelviola {
         text-align: center;
         margin-left: 0;
         margin-right: 0;
     }
 
     /* Modifica lo stile per gli elementi di social */
-    #linkedin, #instagram, #youtube {
+    #linkedin,
+    #instagram,
+    #youtube {
         transition: none;
         transform: none !important;
         color: white;
@@ -210,20 +225,23 @@
 
     /* Modifica lo stile per .programmazione, .arte, .forza, .successo */
 
-    .statistiche{
-        color:rgb(0, 0, 0); font-size: 20px;  padding: 5px; font-family: Akira;
-      }
-      
+    .statistiche {
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        padding: 5px;
+        font-family: Akira;
+    }
 
-    .programmazione{
+
+    .programmazione {
         padding: 5px;
         border-radius: 30px 10px 30px 10px;
         ;
         background-color: #942bd0;
         width: 60px;
     }
-    
-    .arte{
+
+    .arte {
         padding: 5px;
         border-radius: 30px 10px 30px 10px;
         ;
@@ -231,7 +249,7 @@
         width: 40px;
     }
 
-    .forza{
+    .forza {
         padding: 5px;
         border-radius: 30px 10px 30px 10px;
         ;
@@ -239,7 +257,7 @@
         width: 70px;
     }
 
-    .successo{
+    .successo {
         padding: 5px;
         border-radius: 30px 10px 30px 10px;
         background-color: #942bd0;
@@ -249,7 +267,10 @@
 
 
     /* Modifica lo stile per i blocchi rondo */
-    .rondo1, .rondo2, .rondo3, .rondo4 {
+    .rondo1,
+    .rondo2,
+    .rondo3,
+    .rondo4 {
         font-family: EX;
         font-size: 20px;
         margin: 10px 20px;
@@ -284,7 +305,10 @@
     }
 
     /* Modifica lo stile per le stelle */
-    #stella1, #stella2, #stella3, #stella4 {
+    #stella1,
+    #stella2,
+    #stella3,
+    #stella4 {
         position: static;
         float: none;
         margin: 0 auto;
@@ -308,25 +332,23 @@
         margin-top: 10px;
     }
 
-  /* Stile per il div arrotondato */
-.rounded-div,
-.rounded-div2 {
-  width: 300px;
-  height: 150px;
-  background-color: #000000;
-  border: solid 1px white;
+    /* Stile per il div arrotondato */
+    .rounded-div,
+    .rounded-div2 {
+        width: 300px;
+        height: 150px;
+        background-color: #000000;
+        border: solid 1px white;
+    }
+
+    .rounded-div {
+        border-radius: 0px 70px 70px 0px;
+    }
+
+    .rounded-div2 {
+        border-radius: 70px 0px 0px 70px;
+    }
+
+
+
 }
-
-.rounded-div {
-  border-radius: 0px 70px 70px 0px;
-}
-
-.rounded-div2 {
-  border-radius: 70px 0px 0px 70px;
-}
-
-
-
-}
-
-
