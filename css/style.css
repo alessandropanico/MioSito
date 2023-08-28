@@ -342,6 +342,10 @@ code {
   margin-bottom: 20px;
 }
 
+.statistiche{
+  color:rgb(0, 0, 0); font-size: 40px;  padding: 20px; font-family: Akira;
+}
+
 .programmazione {
   padding: 5px;
   border-radius: 30px 10px 30px 10px;

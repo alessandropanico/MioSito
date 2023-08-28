@@ -29,20 +29,27 @@
     /* Stile per la navbar su dispositivi mobili */
     nav {
         text-align: center;
-    }
-
-    nav ul {
-        margin-top: 10px;
-    }
-
-    nav li {
+      }
+      
+      nav ul {
+        margin: 10px 0;
+        padding: 0;
+        list-style: none;
+      }
+      
+      nav li {
         display: inline-block;
         margin: 0;
-    }
-
-    nav a {
+        padding: 0;
+      }
+      
+      nav a {
+        display: block;
         padding: 10px;
-    }
+        text-decoration: none;
+        color: white;
+      }
+      
 
     .outline-text {
         font-size: 12px;
@@ -200,6 +207,11 @@
     }
 
     /* Modifica lo stile per .programmazione, .arte, .forza, .successo */
+
+    .statistiche{
+        color:rgb(0, 0, 0); font-size: 40px;  padding: 20px; font-family: Akira;
+      }
+      
 
     .programmazione{
         padding: 5px;
