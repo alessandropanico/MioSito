@@ -1,95 +1,133 @@
 /* CSS per dispositivi mobili */
 @media only screen and (max-width: 768px) {
-    /* Riduci la dimensione del logo nell'header */
+    /* Immagine di sfondo video */
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -10;
+      }
+      
 
+    /* Header e logo */
     header {
         height: 150px;
     }
-    
     #logo {
         width: 200px;
     }
 
-    /* Centra i social nell'header */
+    /* Social */
     #social {
-        margin-top: 20px;
+        float: none;
+        margin: 10px auto;
         text-align: center;
+        font-size: 2em;
+    }
+    #linkedin, #instagram, #youtube {
+        transition: none;
+        transform: none !important;
+        color: white;
     }
 
-    /* Stile per la navbar su dispositivi mobili */
-    nav {
-        text-align: center;
-    }
-
-    nav ul {
-        margin-top: 10px;
-    }
-
-    nav li {
-        display: block;
-        margin: 0;
-    }
-
-    nav a {
-        padding: 10px;
-    }
-
-    /* Stile per il menu a tendina dei "Progetti" su dispositivi mobili */
+    /* Menu a tendina dei "Progetti" */
     #progetti-dropdown {
-        position: static;
         width: 100%;
         left: 0;
-        bottom: auto;
-        background-color: transparent;
+        bottom: 0;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px 0;
+    }
+    #progetti-dropdown ul, #progetti-dropdown li {
+        margin: 0;
+        padding: 10px 20px;
+    }
+    #progetti-dropdown li {
+        border-bottom: 1px solid #ffffff;
+    }
+    #progetti-dropdown a {
+        display: block;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+    #progetti-dropdown a:hover {
+        color: #942bd0;
     }
 
-    /* Riduci le dimensioni dei blocchi con classe "mio" */
-    .mio {
-        width: 150px;
-        height: 150px;
+    /* Loading container e bar */
+    .loading-container, .loading-bar {
+        border: 5px solid #942bd0;
+        border-radius: 20px;
+        padding: 5px;
+        overflow: hidden;
+    }
+    .loading-bar {
+        width: 100%;
+        height: 20px;
+        background-image: linear-gradient(90deg, transparent 0, transparent 50px, #942bd0 50px, #942bd0 75px, transparent 75px, transparent 100px, #942bd0 100px, #942bd0 125px, transparent 125px, transparent 150px, #942bd0 150px, #942bd0 175px, transparent 175px, transparent 200px, #942bd0 200px);
+        animation: moveLoading 7s linear infinite;
+        position: relative;
     }
 
-    /* Riduci la dimensione del bottone */
-    .btn-toolset {
-        padding: 15px 60px;
-        font-size: 20px;
+    /* Stili generici */
+    .nero {
+        background-color: black;
+        border: 2px solid white;
+        padding: 10px;
+        margin: 20px 0;
     }
-
-    /* Riduci le dimensioni dei titoli */
     .benvenuto, .rondo1, .rondo3, .successo {
         font-size: 30px;
     }
-
-    /* Riduci la dimensione del testo */
     .testo, .rondo2, .rondo4, .testonelviola {
         font-size: 16px;
     }
-
-    /* Riduci la dimensione delle icone dei social */
-    #linkedin, #instagram, #youtube {
-        font-size: 1.5em;
+    code {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .nelnero, .programmazione, .arte, .forza, .successo {
+        padding: 5px;
+        border-radius: 20px;
+        background-color: #942bd0;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .viola {
+        background-color: #942bd0;
+        border-radius: 10px;
+        height: auto;
+        margin: 10px;
+        padding: 20px;
+    }
+    .nelviola, .testonelviola {
+        color: black;
+        font-size: 30px;
+        font-family: EX;
+        text-align: start;
+        padding-top: 20px;
+        margin-left: 10px;
     }
 
-    /* Rimuovi lo sfondo del video per dispositivi mobili */
-    #myVideo {
-        display: none;
+    /* Immagini e stelle */
+    #scrollImg, #stella1, #stella2, #stella3, #stella4 {
+        width: 80px;
     }
-
-    /* Riduci la dimensione delle stelle */
     #stelle {
         width: 150px;
         margin-top: 10px;
     }
 
-    /* Riduci la dimensione delle immagini nella sezione "scrollDiv" */
-    #scrollImg, #stella1, #stella2, #stella3, #stella4 {
-        width: 80px;
-    }
-
-    /* Centra il testo nella sezione "scrollDiv" */
-    .nelviola, .testonelviola {
+    /* Pulsante posizionato */
+    .pos-btn {
+        position: static;
         text-align: center;
-        margin-left: 0;
-        margin-right: 0;
+        margin-top: 10px;
     }
 }
