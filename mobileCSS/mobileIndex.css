@@ -97,15 +97,15 @@
         border: 5px solid #942bd0;
         border-radius: 20px;
         padding: 5px;
-        width: 40%;
-        height: 20px;
+        width: 70%;
+        height: 40px;
         overflow: hidden;
     }
 
     /* Modifica lo stile della loading bar per dispositivi mobili */
     .loading-bar {
-        width: 40%;
-        height: 20px;
+        width: 70%;
+        height: 40px;
         background-image: linear-gradient(90deg, transparent 0, transparent 50px, #942bd0 50px, #942bd0 75px, transparent 75px, transparent 100px, #942bd0 100px, #942bd0 125px, transparent 125px, transparent 150px, #942bd0 150px, #942bd0 175px, transparent 175px, transparent 200px, #942bd0 200px, #942bd0 225px, transparent 225px, transparent 250px, #942bd0 250px, #942bd0 275px, transparent 275px, transparent 300px, #942bd0 300px, #942bd0 325px, transparent 325px, transparent 350px, #942bd0 350px, #942bd0 375px, transparent 375px, transparent 400px, #942bd0 400px, #942bd0 425px, transparent 425px, transparent 450px, #942bd0 450px, #942bd0 475px, transparent 475px, transparent 500px, #942bd0 500px, #942bd0 525px, transparent 525px, transparent 550px, #942bd0 550px, #942bd0 575px, transparent 575px, transparent 600px, #942bd0 600px, #942bd0 625px, transparent 625px, transparent 650px, #942bd0 650px, #942bd0 675px, transparent 675px, transparent 700px, #942bd0 700px, #942bd0 725px, transparent 725px, transparent 750px, #942bd0 750px, #942bd0 775px, transparent 775px, transparent 800px, #942bd0 800px);
         border-radius: 20px;
         animation: moveLoading 7s linear infinite;
@@ -218,7 +218,6 @@
         padding: 10px;
     }
 
-    /* Modifica lo stile per .programmazione, .arte, .forza, .successo */
 
     .statistiche {
         color: rgb(0, 0, 0);
@@ -232,21 +231,21 @@
         padding: 5px;
         border-radius: 30px 10px 30px 10px;
         background-color: #942bd0;
-        width: 600px;
+        width: 60%;
     }
 
     .arte {
         padding: 5px;
         border-radius: 30px 10px 30px 10px;
         background-color: #942bd0;
-        width: 400px;
+        width: 40%;
     }
 
     .forza {
         padding: 5px;
         border-radius: 30px 10px 30px 10px;
         background-color: #942bd0;
-        width: 700px;
+        width: 70%;
     }
 
     .successo {
