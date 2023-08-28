@@ -8,24 +8,26 @@
     <title>Alessandro Panico</title>
 
     <link rel="stylesheet" href="./css/style.css"> <!-- Collegamento al file CSS personalizzato -->
+    <link rel="stylesheet" href="./mobileCSS/mobileIndex.css"> <!-- Collegamento al file CSS personalizzato -->
+
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha512-U6ALlRRGhNtk2EiI8lku5ZfrpNAdyTCMp9UZQKv3QVB4AzJS+9x2pOx93OpfRk9TbqoXHltxbkIPoMCX52EOw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-U6ALlRRGhNtk2EiI8lku5ZfrpNAdyTCMp9UZQKv3QVB4AzJS+9x2pOx93OpfRk9TbqoXHltxbkIPoMCX52EOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha512-U6ALlRRGhNtk2EiI8lku5ZfrpNAdyTCMp9UZQKv3QVB4AzJS+9x2pOx93OpfRk9TbqoXHltxbkIPoMCX52EOw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-U6ALlRRGhNtk2EiI8lku5ZfrpNAdyTCMp9UZQKv3QVB4AzJS+9x2pOx93OpfRk9TbqoXHltxbkIPoMCX52EOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -44,25 +46,23 @@
     <!--LOGO-->
     <header>
         <div class="d-flex justify-content-center">
-            <img src="./immagini/LOGO SUPREMO.png" alt="LOGO" style="width: 700px;  position: absolute;">
+            <img src="./immagini/LOGO SUPREMO.png" alt="LOGO" style="width: 700px;  position: absolute;" id="logo">
         </div>
 
 
 
         <!--SOCIAL-->
-        <div
-            style="float: right; margin-right: 10px ;margin-top: 300px;color:white;position: relative; font-size: 3em;">
-            <a style="transition: none; transform: none !important; color:white"
-                href="https://www.linkedin.com/in/alessandro-panico-4b974b272/">
+        <div id="social">
+
+            <a id="linkedin" href="https://www.linkedin.com/in/alessandro-panico-4b974b272/">
                 <i class="fab fa-linkedin-in icon"></i></a>
 
-            <a style="transition: none; transform: none !important; color:white"
-                href="https://www.instagram.com/_nakamayt/?hl=it">
+            <a id="instagram" href="https://www.instagram.com/_nakamayt/?hl=it">
                 <i class="fab fa-instagram icon"></i></a>
 
-            <a style="transition: none; transform: none !important; color:white"
-                href="https://www.youtube.com/channel/UC8rQxh_mjGtKiBQJkixhYGQ">
+            <a id="youtube" href="https://www.youtube.com/channel/UC8rQxh_mjGtKiBQJkixhYGQ">
                 <i class="fab fa-youtube icon"></i></a>
+
         </div>
 
         </div>
@@ -88,7 +88,6 @@
                     </ul>
                 </div>
 
-
             </nav>
         </div>
 
@@ -97,40 +96,34 @@
     <div class="container">
         <article style="margin-top: 70px; ">
 
+            <div class="nero">
+                <div class="benvenuto">BENVENUTO</div>
+                <div class="testo">
+                    <p>Benvenuto sul mio sito web realizzato interamente da me. Questo sito ha lo scopo di rappresentare
+                        me ed i miei lavori. Buona
+                        navigazione!</p>
 
-            <div
-                style="background-color: black; border: 2px solid; border-color: white;  height: auto; padding: 20px; ">
-                <div style="color: #942bd0; margin-top: 10px;font-family: EX; font-size: 70px;">BENVENUTO</div>
-                <div style="color:white; font-size: 20px; font-family:  Helvetica, sans-serif;">
-                    <p>Benvenuto sul mio sito web realizzato interamente da me. Questo sito ha lo scopo di rappresentare me ed i miei lavori. Buona
-                    navigazione!</p>
-
-                    <code style=" font-size: 20px; margin-left: 20px;">SUCCESSO IN CORSO...</code>
+                    <code>SUCCESSO IN CORSO...</code>
 
                     <div class="loading-container">
                         <div class="loading-bar"></div>
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <img src="./immagini/stelle.png" style="margin-top: 20px ;width: 250px;">
+                        <img src="./immagini/stelle.png" style="margin-top: 20px ;width: 250px;" id="stelle">
                     </div>
 
-                    <div
-                        style="border: solid 2px; border-color: white; margin-top: 20px; width: auto; margin-bottom: 20px;">
+                    <div class="nelnero">
 
-                        <div style="color:rgb(0, 0, 0); font-size: 40px;  padding: 20px; font-family: Akira;  ">
+                        <div style="color:rgb(0, 0, 0); font-size: 40px;  padding: 20px; font-family: Akira; ">
 
-                            <p
-                                style="padding: 5px;border-radius: 30px 10px 30px 10px; ;background-color: #942bd0; width: 600px;">
+                            <p class="programmazione">
                                 PROGRAMMAZIONE</p>
-                            <p
-                                style="padding: 5px;border-radius: 30px 10px 30px 10px; ;background-color: #942bd0; width: 400px;">
+                            <p class="arte">
                                 ARTE</p>
-                            <p
-                                style="padding: 5px;border-radius: 30px 10px 30px 10px; ;background-color: #942bd0; width: 700px;">
+                            <p class="forza">
                                 FORZA</p>
-                            <div style="padding: 5px;border-radius: 30px 10px 30px 10px; background-color: #942bd0; 
-                    width: auto; border-radius: 30px 10px 30px 10px;">SUCCESSO</div>
+                            <div class="successo">SUCCESSO</div>
                         </div>
                     </div>
 
@@ -141,10 +134,9 @@
         </article>
 
         <div class="d-flex justify-content-center">
-            <div class="simboli-container"
-                style="background-color: black;border:solid 2px; border-color: white ;margin-top: 30px; height: 35px;">
+            <div class="simboli-container">
                 <div>
-                    <img src="./immagini/stelle.png" width="100px">
+                    <img src="./immagini/stelle.png" width="100px" id="stella">
                 </div>
 
                 <div>
@@ -163,10 +155,11 @@
 
             <div class="rounded-div ">
 
-                <div style="color: #942bd0; font-family: EX; margin-top:10px; font-size: 25px; margin-left: 20px;">
+                <div class="rondo1">
                     COSA VOGLIO PRESENTARE
                 </div>
-                <div style="color:white;  font-family:  Helvetica, sans-serif; font-size: 20px; margin-left: 20px;">
+
+                <div class="rondo2">
                     <p> Voglio semplicemente presentare me stesso in primis come programmatore.
                         Questo è un portfolio vero è proprio.</p>
                 </div>
@@ -175,12 +168,10 @@
 
             <div class="rounded-div2" style="float:right">
 
-                <div
-                    style="color: #942bd0; font-family: EX; font-size: 25px;  text-align: end; margin-top:10px; margin-right: 20px;">
+                <div class="rondo3">
                     VUOI DARE UN OCCHIATA?
                 </div>
-                <div
-                    style="color:white;  font-family:  Helvetica, sans-serif; font-size: 20px; margin-right: 20px; text-align: end;">
+                <div class="rondo4">
                     <p>Se noti la parte grafica ti renderai conto che non so solo programmare. Sono anche un artista!
                     </p>
                 </div>
@@ -192,47 +183,41 @@
         <section style="margin-top: 200px;">
 
 
-            <div id="scrollDiv"
-                style="background-color: #942bd0; border-radius: 20px; height: 700px; margin: 2px; overflow: hidden; position: relative;">
+            <div id="scrollDiv" class="viola">
 
-                <img src="./immagini/evangelionNERO.png"
-                    style="height: 700px; position: absolute; right: -600px; transform: translateX(-50%); z-index: 0;"
-                    id="scrollImg">
+                <img src="./immagini/evangelionNERO.png" id="scrollImg">
 
                 <div>
-                    <img src="./immagini/singolaNera.png"
-                        style="position: absolute; top: 10px; left: 20px; width: 100px;">
-                    <img src="./immagini/singolaNera.png"
-                        style="position: absolute; top: 10px; right: 20px; width: 100px;">
+                    <img src="./immagini/singolaNera.png" id="stella1">
+                    <img src="./immagini/singolaNera.png" id="stella2">
                 </div>
 
-                <div
-                    style="color: rgb(0, 0, 0); font-size: 50px; font-family: EX; text-align: start; padding-top: 110px; position: relative; margin-left: 20px;">
+                <div class="nelviola">
                     <p>UN AMANTE DELLA PROGRAMMAZIONE...</p>
                     <p>E NON SOLO</p>
                 </div>
 
-                <div
-                    style="color: black; font-size: 20px; font-family: Helvetica, sans-serif; text-align: start; margin-top: 0px; margin-left: 20px; ">
+                <div class="testonelviola">
                     <strong>
-                        <p style="line-height: 1">Sono un ragazzo molto dinamico e amo programmare.</p>
+                        <p>Sono un ragazzo molto dinamico e amo programmare.</p>
                         <p>Spero (e voglio) arrivare sempre piu' in alto.</p>
                         <p>Non ci sono limiti.</p>
                         <p>L'unico limite siamo solo noi stessi.</p>
                     </strong>
                 </div>
 
-                <div style="position: absolute; bottom: 20px; width: 100%; text-align: center; z-index: 9999;">
-                    <button class="btn-toolset" style="font-family: 'Akira';" type="button" onclick="chiSono()">CHI
+                <div class="pos-btn">
+                    <button class="btn-toolset" type="button" onclick="chiSono()">CHI
                         SONO</button>
                 </div>
 
                 <div style="margin-top: 50px;">
-                    <img src="./immagini/singolaNera.png" style="margin-left: 10px; width: 100px;">
-                    <img src="./immagini/singolaNera.png" style="float: right; margin-right: 10px; width: 100px;">
+                    <img src="./immagini/singolaNera.png" id="stella3">
+                    <img src="./immagini/singolaNera.png" id="stella4">
                 </div>
 
             </div>
+
         </section>
 
     </div>
