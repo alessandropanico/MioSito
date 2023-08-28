@@ -50,7 +50,7 @@
     }
   
     /* Stili specifici per altre classi e ID */
-  
+    
     /* Stili per #myVideo */
     #myVideo {
       position: fixed;
@@ -60,26 +60,26 @@
       min-height: 100%;
       z-index: -10;
     }
-  
+    
     /* Stili per header */
     header {
       background-color: #000000;
       padding: 10px;
       height: 200px;
     }
-  
+    
     /* Stili per nav */
     nav {
       text-align: center;
     }
-  
+    
     /* Stili per nav ul e nav li */
     nav ul, nav li {
       list-style: none;
       margin: 0;
       padding: 0;
     }
-  
+    
     /* Stili per nav a */
     nav a {
       display: block;
@@ -91,18 +91,18 @@
       background-size: 200% 100%;
       transition: background-position 0.4s ease;
     }
-  
+    
     /* Stili per il menu a tendina dei "Progetti" */
     #progetti-dropdown ul {
       list-style: none;
       padding: 0;
     }
-  
+    
     /* Stili per gli elementi del menu a tendina dei "Progetti" */
     #progetti-dropdown li {
       margin: 5px 0;
     }
-  
+    
     /* Stili per a all'interno di #progetti-dropdown */
     #progetti-dropdown a {
       display: block;
