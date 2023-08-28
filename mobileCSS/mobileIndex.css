@@ -1,6 +1,5 @@
 /* CSS per dispositivi mobili */
 @media only screen and (max-width: 768px) {
-    /* Immagine di sfondo video */
     #myVideo {
         position: fixed;
         right: 0;
@@ -8,31 +7,51 @@
         min-width: 100%;
         min-height: 100%;
         z-index: -10;
-      }
-      
+    }
 
-    /* Header e logo */
     header {
         height: 150px;
     }
+
     #logo {
         width: 200px;
     }
 
-    /* Social */
+    /* Centra i social nell'header */
     #social {
+        margin-top: 20px;
+        text-align: center;
         float: none;
         margin: 10px auto;
-        text-align: center;
         font-size: 2em;
     }
-    #linkedin, #instagram, #youtube {
-        transition: none;
-        transform: none !important;
-        color: white;
+
+    /* Stile per la navbar su dispositivi mobili */
+    nav {
+        text-align: center;
     }
 
-    /* Menu a tendina dei "Progetti" */
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .outline-text {
+        font-size: 12px;
+        font-weight: bold;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+    }
+
+    /* Stile per il menu a tendina dei "Progetti" su dispositivi mobili */
     #progetti-dropdown {
         width: 100%;
         left: 0;
@@ -41,13 +60,18 @@
         background-color: rgba(0, 0, 0, 0.9);
         padding: 10px 0;
     }
-    #progetti-dropdown ul, #progetti-dropdown li {
+
+    #progetti-dropdown ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    #progetti-dropdown li {
         margin: 0;
         padding: 10px 20px;
-    }
-    #progetti-dropdown li {
         border-bottom: 1px solid #ffffff;
     }
+
     #progetti-dropdown a {
         display: block;
         text-decoration: none;
@@ -55,43 +79,126 @@
         font-size: 18px;
         transition: color 0.3s ease;
     }
+
     #progetti-dropdown a:hover {
         color: #942bd0;
     }
 
-    /* Loading container e bar */
-    .loading-container, .loading-bar {
+    /* Modifica lo stile del loading container per dispositivi mobili */
+    .loading-container {
         border: 5px solid #942bd0;
         border-radius: 20px;
         padding: 5px;
+        width: 90%;
         overflow: hidden;
     }
+
+    /* Modifica lo stile della loading bar per dispositivi mobili */
     .loading-bar {
         width: 100%;
         height: 20px;
-        background-image: linear-gradient(90deg, transparent 0, transparent 50px, #942bd0 50px, #942bd0 75px, transparent 75px, transparent 100px, #942bd0 100px, #942bd0 125px, transparent 125px, transparent 150px, #942bd0 150px, #942bd0 175px, transparent 175px, transparent 200px, #942bd0 200px);
+        background-image: linear-gradient(90deg, transparent 0, transparent 50px, #942bd0 50px, #942bd0 75px, transparent 75px, transparent 100px, #942bd0 100px, #942bd0 125px, transparent 125px, transparent 150px, #942bd0 150px, #942bd0 175px, transparent 175px, transparent 200px, #942bd0 200px, #942bd0 225px, transparent 225px, transparent 250px, #942bd0 250px, #942bd0 275px, transparent 275px, transparent 300px, #942bd0 300px, #942bd0 325px, transparent 325px, transparent 350px, #942bd0 350px, #942bd0 375px, transparent 375px, transparent 400px, #942bd0 400px, #942bd0 425px, transparent 425px, transparent 450px, #942bd0 450px, #942bd0 475px, transparent 475px, transparent 500px, #942bd0 500px, #942bd0 525px, transparent 525px, transparent 550px, #942bd0 550px, #942bd0 575px, transparent 575px, transparent 600px, #942bd0 600px, #942bd0 625px, transparent 625px, transparent 650px, #942bd0 650px, #942bd0 675px, transparent 675px, transparent 700px, #942bd0 700px, #942bd0 725px, transparent 725px, transparent 750px, #942bd0 750px, #942bd0 775px, transparent 775px, transparent 800px, #942bd0 800px);
+        border-radius: 20px;
         animation: moveLoading 7s linear infinite;
         position: relative;
     }
 
-    /* Stili generici */
+    /* Riduci le dimensioni dei blocchi con classe "mio" */
+    .mio {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Riduci la dimensione del bottone */
+    .btn-toolset {
+        padding: 15px 60px;
+        font-size: 20px;
+    }
+
+    /* Riduci le dimensioni dei titoli */
+    .benvenuto, .rondo1, .rondo3, .successo {
+        font-size: 30px;
+    }
+
+    /* Riduci la dimensione del testo */
+    .testo, .rondo2, .rondo4, .testonelviola {
+        font-size: 16px;
+    }
+
+    /* Riduci la dimensione delle icone dei social */
+    #linkedin, #instagram, #youtube {
+        font-size: 1.5em;
+    }
+
+    /* Rimuovi lo sfondo del video per dispositivi mobili */
+    #myVideo {
+        display: none;
+    }
+
+    /* Riduci la dimensione delle stelle */
+    #stelle {
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    /* Riduci la dimensione delle immagini nella sezione "scrollDiv" */
+    #scrollImg, #stella1, #stella2, #stella3, #stella4 {
+        width: 80px;
+    }
+
+    /* Centra il testo nella sezione "scrollDiv" */
+    .nelviola, .testonelviola {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Modifica lo stile per gli elementi di social */
+    #linkedin, #instagram, #youtube {
+        transition: none;
+        transform: none !important;
+        color: white;
+    }
+
+    /* Modifica lo stile per l'elemento .nero */
     .nero {
         background-color: black;
         border: 2px solid white;
         padding: 10px;
         margin: 20px 0;
     }
-    .benvenuto, .rondo1, .rondo3, .successo {
-        font-size: 30px;
+
+    /* Modifica lo stile per il testo di benvenuto */
+    .benvenuto {
+        color: #942bd0;
+        margin-top: 10px;
+        font-family: EX;
+        font-size: 40px;
+        text-align: center;
     }
-    .testo, .rondo2, .rondo4, .testonelviola {
+
+    /* Modifica lo stile per il testo generico */
+    .testo {
+        color: white;
         font-size: 16px;
+        font-family: Helvetica, sans-serif;
     }
+
+    /* Modifica lo stile per il codice */
     code {
         font-size: 16px;
         margin-left: 10px;
     }
-    .nelnero, .programmazione, .arte, .forza, .successo {
+
+    /* Modifica lo stile per .nelnero */
+    .nelnero {
+        border: 2px solid white;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    /* Modifica lo stile per .programmazione, .arte, .forza, .successo */
+    .programmazione, .arte, .forza, .successo {
         padding: 5px;
         border-radius: 20px;
         background-color: #942bd0;
@@ -99,6 +206,16 @@
         margin: 10px auto;
         text-align: center;
     }
+
+    /* Modifica lo stile per i blocchi rondo */
+    .rondo1, .rondo2, .rondo3, .rondo4 {
+        font-family: EX;
+        font-size: 20px;
+        margin: 10px 20px;
+        text-align: center;
+    }
+
+    /* Modifica lo stile per il blocco viola */
     .viola {
         background-color: #942bd0;
         border-radius: 10px;
@@ -106,7 +223,9 @@
         margin: 10px;
         padding: 20px;
     }
-    .nelviola, .testonelviola {
+
+    /* Modifica lo stile per il testo nel blocco viola */
+    .nelviola {
         color: black;
         font-size: 30px;
         font-family: EX;
@@ -115,16 +234,33 @@
         margin-left: 10px;
     }
 
-    /* Immagini e stelle */
-    #scrollImg, #stella1, #stella2, #stella3, #stella4 {
-        width: 80px;
-    }
-    #stelle {
-        width: 150px;
-        margin-top: 10px;
+    /* Modifica lo stile per l'immagine di scroll */
+    #scrollImg {
+        height: auto;
+        position: static;
+        transform: none;
+        z-index: 0;
     }
 
-    /* Pulsante posizionato */
+    /* Modifica lo stile per le stelle */
+    #stella1, #stella2, #stella3, #stella4 {
+        position: static;
+        float: none;
+        margin: 0 auto;
+        width: 100px;
+    }
+
+    /* Modifica lo stile per il testo nel blocco viola */
+    .testonelviola {
+        color: black;
+        font-size: 16px;
+        font-family: Helvetica, sans-serif;
+        text-align: start;
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    /* Modifica lo stile per il pulsante posizionato */
     .pos-btn {
         position: static;
         text-align: center;
