@@ -275,6 +275,11 @@ nav a:hover {
 }
 
 /*ALTRI CSS DELL'INDEX*/
+
+#logo{
+  width: 700px;  position: absolute;
+}
+
 #social {
   float: right;
   margin-right: 10px;

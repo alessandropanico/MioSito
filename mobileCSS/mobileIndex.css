@@ -1,8 +1,13 @@
 /* CSS per dispositivi mobili */
 @media only screen and (max-width: 768px) {
     /* Riduci la dimensione del logo nell'header */
+
+    header {
+        height: 150px;
+    }
+    
     #logo {
-        width: 400px;
+        width: 200px;
     }
 
     /* Centra i social nell'header */
