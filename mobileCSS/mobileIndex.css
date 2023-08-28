@@ -1,5 +1,21 @@
 /* CSS per dispositivi mobili */
 @media only screen and (max-width: 768px) {
+
+    @font-face {
+        font-family: "Akira";
+        /* Sostituisci con il nome che vuoi assegnare al font */
+        src: url("../fonts/MW/ModernWarfare-8MM6z.ttf");
+        /* Percorso del file del font */
+      }
+      
+      
+      @font-face {
+        font-family: "EX";
+        /* Sostituisci con il nome che vuoi assegnare al font */
+        src: url("../fonts/EXPANDED/Akira\ Expanded\ Demo.otf");
+        /* Percorso del file del font */
+      }
+      
     #myVideo {
         position: fixed;
         right: 0;

@@ -12,7 +12,6 @@
   }
   
 
-  
   .title {
     font-family: Akira;
     font-size: 70px;
@@ -30,6 +29,56 @@
   
   .contact-text {
     margin-left: 10px;
+  }
+
+  #inviaButtonWH {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 1.2;
+    font-weight: normal;
+    font-family: 'Akira';
+    font-size: 20px; /* Ridotto il valore del font-size */
+    background-color: rgb(224, 34, 113);
+    border-radius: 30px; /* Ridotto il valore del border-radius */
+    padding: 15px 40px; /* Ridotti i valori del padding */
+    border: 3px solid rgb(224, 34, 113); /* Ridotto il valore del border */
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    /* Aggiunta della transizione */
+}
+
+#inviaButtonWH:hover{
+  background-color: #2bc41d;
+  border-color: rgb(224, 34, 113);
+}
+
+
+
+  #inviaButtonEM {
+      display: inline-block;
+      text-align: center;
+      white-space: nowrap;
+      color: #FFFFFF;
+      text-decoration: none;
+      line-height: 1.2;
+      font-weight: normal;
+      font-family: 'Akira';
+      font-size: 20px; /* Ridotto il valore del font-size */
+      background-color: rgb(224, 34, 113);
+      border-radius: 30px; /* Ridotto il valore del border-radius */
+      padding: 15px 40px; /* Ridotti i valori del padding */
+      border: 3px solid rgb(224, 34, 113); /* Ridotto il valore del border */
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+      /* Aggiunta della transizione */
+  }
+
+  #inviaButtonEM:hover{
+  background-color:#942bd0;
+  border-color: rgb(224, 34, 113);
   }
   
 

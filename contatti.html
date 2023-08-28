@@ -91,18 +91,22 @@
 
     </header>
 
-    <article style="margin-top: 70px;">
+    <section style="margin-top: 70px;">
 
 
 
-        <div class="d-flex justify-content-center align-items-center" >
+        <div class="d-flex justify-content-center align-items-center">
+
             <div class="black-div">
+                
                 <div class="title">
                     CONTATTI
                 </div>
 
                 <div class="d-flex justify-content-center">
+
                     <div class="container text-white mt-4">
+
                         <div class="contact-item">
                             <div>
                                 <i class="fab fa-whatsapp icon" style="font-size: 2em;"></i>
@@ -112,8 +116,6 @@
                             </div>
                         </div>
 
-
-
                         <div class="contact-item">
                             <div>
                                 <i class="fab fa-linkedin-in icon" style="font-size: 2em;"></i>
@@ -122,8 +124,6 @@
                                 Linkedin: Alessandro Panico
                             </div>
                         </div>
-
-
 
                         <div class="contact-item">
                             <div>
@@ -142,6 +142,7 @@
                                 Instagram: _nakamayt
                             </div>
                         </div>
+
                         <div class="contact-item">
                             <div>
                                 <i class="fab fa-youtube icon" style="font-size: 2em;"></i>
@@ -150,65 +151,98 @@
                                 YouTube: Nakama
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
+
         </div>
 
-    
-    </article>
+    </section>
 
 
-    <article style="margin-top: 70px;">
+    <section style="margin-top: 70px;">
 
-    <div class="d-flex justify-content-center">
-        <div class="simboli-container"
-            style="background-color: black; border:solid 2px; ; border-color: white ; height: 35px;">
-            <div>
-                <img src="./immagini/stelle.png" style= "width: 100px">
-            </div>
-
-            <div>
-                <img src="./immagini/linea.png">
-            </div>
-
-            <div>
-                <img src="./immagini/stelle.png" style= "width: 100px">
-            </div>
-        </div>
-    </div>
-</article>
-
-    
-    <article style="margin-top: 50px;">
         <div class="d-flex justify-content-center">
-            <div
-                style="background-color: #942bd0; width: 700px; height: 100px; border-radius: 100px; display: flex; align-items: center; justify-content: center;">
-                <div style="font-family: Akira; color: black; font-size: 20px; text-align: center;">
-                    PUOI INIZIARE A SCRIVERMI ANCHE DA QUI
+            <div class="simboli-container"
+                style="background-color: black; border:solid 2px; ; border-color: white ; height: 35px;">
+                <div>
+                    <img src="./immagini/stelle.png" style="width: 100px">
+                </div>
+
+                <div>
+                    <img src="./immagini/linea.png">
+                </div>
+
+                <div>
+                    <img src="./immagini/stelle.png" style="width: 100px">
                 </div>
             </div>
         </div>
+    </section>
 
-        <!--TEXTAREA EMAIL-->
+
+    <section style="margin-top: 50px;">
         <div class="d-flex justify-content-center">
-            <div style="margin-top: 30px;">
-                <textarea id="message"
-                    style="width: 700px; height: 250px; color: white; background-color: black;
-              border: solid 2px; border-color: white; border-radius: 20px; padding: 10px; font-family:  Helvetica, sans-serif; font-size: 20px;"
-                    placeholder="Invia tramite e-mail..."></textarea>
+            <div
+                style="background-color: #942bd0; width: 700px; height: 100px; border-radius: 100px; display: flex; align-items: center; justify-content: center;">
+                <div style="font-family: Akira; color: black; font-size: 30px; text-align: center;">
+                    PUOI CONTATTARMI ANCHE QUI
+                </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center">
-            <div style="margin-top: 20px;">
-                <button class="btn-toolset" style="font-family: Akira;" onclick="sendEmail()">INVIA</button>
-            </div>
-        </div>
-    </article>
+    </section> 
 
-<article style="margin-top: 30px;"></article>
+        <!--INVIO DATI-->
+     <section style="margin-top: 50px;">
+
+        <div class="d-flex justify-content-center">
+            
+            <div style="background-color: black; border: solid 2px; border-color: white; border-radius: 20px; color: white;
+             padding: 20px; width: 1000px; height: 550px;">
+                
+                <form id="aziendaForm">
+                    <div class="mb-3">
+                        <label for="nomeAzienda" class="form-label">Nome azienda:</label>
+                        <input type="text" class="form-control" placeholder="Inserisci nome" id="nomeAzienda" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailAzienda" class="form-label">Email azienda:</label>
+                        <input type="email" class="form-control" placeholder="Inserisci e-mail" id="emailAzienda" required>
+                    </div>
+                     <div class="mb-3">
+                        <label for="cellulareAzienda" class="form-label">Cellulare azienda:</label>
+                        <input type="number" class="form-control" placeholder="Inserisci cellullare" id="cellulareAzienda" required>
+                    </div> 
+                    <div class="mb-3">
+                        <label for="messaggio">Inserisci messaggio:</label>
+                        <textarea class="form-control" id="messaggio" placeholder="Inserisci messaggio" rows="4"></textarea>
+                    </div>
+                </form>
+
+                <div id="aziendaMessage" class="mt-3"></div>
+                
+                <div style="margin-top: 30px;">
+
+                <button type="submit" id="inviaButtonWH" class="btn btn-primary">INVIA SU WHATSAPP</button>
+                <button type="submit" id="inviaButtonEM" class="btn btn-primary">INVIA EMAIL</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section style="margin-top: 50px;"></section>
 
 </body>
+
 <script src="./js/lib.js"></script>
+<script src="./js/email.js"></script>
+<script src="./js/whatsapp.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 
 </html>
