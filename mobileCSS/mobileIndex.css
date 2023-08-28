@@ -1,0 +1,158 @@
+/* Stili per dispositivi mobili */
+@media screen and (max-width: 768px) {
+    /* Regola la dimensione del font per una migliore leggibilità su schermi più piccoli */
+    body {
+      font-size: 14px;
+    }
+  
+    /* Regola la dimensione e la posizione del logo */
+    #logo {
+      width: 200px;
+      margin-top: 10px;
+    }
+  
+    /* Allinea al centro le icone sociali su dispositivi mobili */
+    #social {
+      margin: 10px auto;
+      text-align: center;
+    }
+  
+    /* Riduci l'altezza dell'header su dispositivi mobili */
+    header {
+      height: 200px;
+    }
+  
+    /* Regola i link di navigazione per una migliore spaziatura */
+    nav li {
+      margin: 5px 5px;
+      margin-top: 10px;
+    }
+  
+    /* Modifica lo stile del menu a tendina per una migliore leggibilità su dispositivi mobili */
+    #progetti-dropdown {
+      left: auto;
+      right: 5px;
+      bottom: -10px;
+    }
+  
+    /* Regola la dimensione e lo spaziatura dei blocchi arrotondati su dispositivi mobili */
+    .rounded-div,
+    .rounded-div2 {
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      margin: 5px 0;
+    }
+  
+    /* Regola la dimensione del testo per il testo "BENVENUTO" */
+    .benvenuto {
+      font-size: 30px;
+    }
+  
+    /* Stili specifici per altre classi e ID */
+  
+    /* Stili per #myVideo */
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -10;
+    }
+  
+    /* Stili per header */
+    header {
+      background-color: #000000;
+      padding: 10px;
+      height: 200px;
+    }
+  
+    /* Stili per nav */
+    nav {
+      text-align: center;
+    }
+  
+    /* Stili per nav ul e nav li */
+    nav ul, nav li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* Stili per nav a */
+    nav a {
+      display: block;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 24px;
+      padding: 10px 15px;
+      border-radius: 0;
+      background-size: 200% 100%;
+      transition: background-position 0.4s ease;
+    }
+  
+    /* Stili per il menu a tendina dei "Progetti" */
+    #progetti-dropdown ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    /* Stili per gli elementi del menu a tendina dei "Progetti" */
+    #progetti-dropdown li {
+      margin: 5px 0;
+    }
+  
+    /* Stili per a all'interno di #progetti-dropdown */
+    #progetti-dropdown a {
+      display: block;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 20px;
+    }
+  
+    /* Stili per .rounded-div */
+    .rounded-div {
+      width: 100%;
+      height: auto;
+      background-color: #000000;
+      border-radius: 0;
+      border: solid 1px;
+      border-color: white;
+    }
+  
+    /* Stili per .rounded-div2 */
+    .rounded-div2 {
+      width: 100%;
+      height: auto;
+      background-color: #000000;
+      border-radius: 0;
+      border: solid 1px;
+      border-color: white;
+    }
+  
+    /* Stili per .btn-toolset */
+    .btn-toolset {
+      display: inline-block;
+      text-align: center;
+      white-space: nowrap;
+      color: #FFFFFF;
+      text-decoration: none;
+      line-height: 1.2;
+      font-weight: normal;
+      font-family: 'Akira';
+      font-size: 18px;
+      background-color: rgb(224, 34, 113);
+      border-radius: 50px;
+      padding: 15px 60px;
+      border: 5px solid rgb(224, 34, 113);
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+    }
+  
+    /* Stili per .simboli-container div */
+    .simboli-container div {
+      margin: 10px;
+    }
+  }
+  
