@@ -1,485 +1,84 @@
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -10;
-  /*filter: brightness(0.5);*/
-}
+.black-div {
+    background-color: black;
+    border: solid 2px;
+    border-color: white;
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
 
-
-/* Stile per l'header */
-header {
-  background-color: #000000;
-  /* Colore di sfondo dell'header */
-  padding: 10px;
-  /* Spazio interno all'header */
-  height: 380px;
-}
-
-/* Stile per la navbar */
-nav {
-  text-align: start;
-
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/*ELEMENTI NAVBAR*/
-nav li {
-  display: inline-block;
-  margin: 0 15px;
-  /* Spazio tra i link della navbar */
-  margin-top: 290px;
-}
-
-nav a {
-  display: block;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 30px;
-  padding: 10px 15px;
-  border-radius: 0%;
-  background-size: 200% 100%;
-  transition: background-position 0.4s ease;
-}
-
-nav a:hover {
-  background-position: -100% 100%;
-  background-image: linear-gradient(45deg, #942bd0 50%, transparent 50%);
-}
-
-
-
-/*FONT SENZA RIEMPIMENTO*/
-.outline-text {
-  font-size: 40px;
-  font-weight: bold;
-  color: transparent;
-  /* Testo trasparente */
-  -webkit-text-stroke: 1px white;
-  /* Stroke bianco di spessore 2px */
-}
-
-/* Stile per il menu a tendina */
-/* Aggiorna il CSS per il menu a tendina dei "Progetti" */
-#progetti-dropdown {
-  display: none;
-  background-color: rgb(0, 0, 0);
-  /* Colore di sfondo del menu a tendina */
-  width: 200px;
-  left: 710px;
-  bottom: 5px;
-
-}
-
-/* Stile per gli elementi del menu a tendina dei "Progetti" */
-#progetti-dropdown ul {
-  list-style: none;
-  padding: 0;
-  /* Rimuovi il padding predefinito per evitare spazi aggiuntivi */
-}
-
-#progetti-dropdown li {
-  margin: 5px 0;
-  /* Aggiunge uno spazio tra gli elementi del menu a tendina */
-}
-
-#progetti-dropdown a {
-  display: block;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 20px;
-}
-
-/* Stile per l'elemento contenente il menu a tendina dei "Progetti" */
-.dropdown-container {
-  position: relative;
-  /* Posizione relativa per consentire il posizionamento del menu a tendina */
-}
-
-/* Modifica per visualizzare gli elementi dei "Progetti" in colonna */
-#progetti-dropdown ul li {
-  display: block;
-}
-
-
-/*LOADING*/
-.loading-container {
-  border: 10px solid #942bd0;
-  border-radius: 40px;
-  background-color: transparent;
-  padding: 10px;
-  width: 1020px;
-  /* Aggiungo 20px per includere il bordo */
-  overflow: hidden;
-}
-
-.loading-bar {
-  width: 970px;
-  height: 30px;
-  background-image: linear-gradient(100deg, transparent 0, transparent 100px, #942bd0 100px, #942bd0 150px, transparent 150px, transparent 200px, #942bd0 200px, #942bd0 250px, transparent 250px, transparent 300px, #942bd0 300px, #942bd0 350px, transparent 350px, transparent 400px, #942bd0 400px, #942bd0 450px, transparent 450px, transparent 500px, #942bd0 500px, #942bd0 550px, transparent 550px, transparent 600px, #942bd0 600px, #942bd0 650px, transparent 650px, transparent 700px, #942bd0 700px, #942bd0 750px, transparent 750px, transparent 800px, #942bd0 800px, #942bd0 850px, transparent 850px, transparent 900px, #942bd0 900px, #942bd0 950px, transparent 950px, transparent 1000px);
-  border-radius: 40px;
-  animation: moveLoading 7s linear infinite;
-  /* Aumentato il tempo dell'animazione a 7 secondi */
-  position: relative;
-  /* Aggiunta questa regola per gestire la dissolvenza all'inizio */
-}
-
-@keyframes moveLoading {
-  0% {
-    background-position: -10px;
-    /* Sposto leggermente all'indietro la dissolvenza */
+  .title {
+    font-family: Akira;
+    font-size: 70px;
+    color: #942bd0;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 15px; /* Spaziatura tra le icone e le parole associate */
+  }
+  
+  .contact-text {
+    margin-left: 10px;
   }
 
-  100% {
-    background-position: 1010px;
-    /* Aumentato il valore a 1010px */
-  }
+  #inviaButtonWH {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 1.2;
+    font-weight: normal;
+    font-family: 'Akira';
+    font-size: 20px; /* Ridotto il valore del font-size */
+    background-color: rgb(224, 34, 113);
+    border-radius: 30px; /* Ridotto il valore del border-radius */
+    padding: 15px 40px; /* Ridotti i valori del padding */
+    border: 3px solid rgb(224, 34, 113); /* Ridotto il valore del border */
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    /* Aggiunta della transizione */
 }
 
-/**/
-.rounded-div {
-  width: 600px;
-  /* Larghezza del div */
-  height: 150px;
-  /* Altezza del div */
-  background-color: #000000;
-  /* Colore di sfondo del div */
-  border-radius: 0px 70px 70px 0px;
-  /* Arrotonda solo gli angoli in alto */
-  border: solid 1px;
-  border-color: white;
-}
-
-.rounded-div2 {
-  width: 600px;
-  /* Larghezza del div */
-  height: 150px;
-  /* Altezza del div */
-  background-color: #000000;
-  /* Colore di sfondo del div */
-  border-radius: 70px 0px 0px 70px;
-  /* Arrotonda solo gli angoli in alto */
-  border: solid 1px;
-  border-color: white;
-  float:right
-}
-
-
-.d-flex {
-  display: flex;
-}
-
-.justify-content-center {
-  justify-content: center;
-}
-
-.simboli-container {
-  display: flex;
-  align-items: center;
-  background-color: black;
-  border: solid 2px;
-  border-color: white;
-  margin-top: 30px;
-  height: 35px;
-}
-
-.simboli-container div {
-  margin: 10px;
-  /* Aggiungi un margine tra le immagini */
-}
-
-
-/*FONT*/
-@font-face {
-  font-family: "Akira";
-  /* Sostituisci con il nome che vuoi assegnare al font */
-  src: url("../fonts/MW/ModernWarfare-8MM6z.ttf");
-  /* Percorso del file del font */
-}
-
-
-@font-face {
-  font-family: "EX";
-  /* Sostituisci con il nome che vuoi assegnare al font */
-  src: url("../fonts/EXPANDED/Akira\ Expanded\ Demo.otf");
-  /* Percorso del file del font */
-}
-
-
-/*BOTTONE*/
-.btn-toolset {
-  display: inline-block;
-  text-align: center;
-  white-space: nowrap;
-  color: #FFFFFF;
-  text-decoration: none;
-  line-height: 1.2;
-  font-weight: normal;
-  font-family: 'Akira';
-  font-size: 25px;
-  background-color: rgb(224, 34, 113);
-  border-radius: 50px;
-  padding: 25px 90px;
-  border: 5px solid rgb(224, 34, 113);
-  cursor: pointer;
-  transition: background-color 0.5s ease;
-  /* Aggiunta della transizione */
-}
-
-.btn-toolset:hover {
-  background-color: #000000;
+#inviaButtonWH:hover{
+  background-color: rgb(30, 169, 60);
   border-color: rgb(224, 34, 113);
 }
 
-.btn-toolset>strong {
-  font-size: 24px;
-}
 
+  #inviaButtonEM {
+      display: inline-block;
+      text-align: center;
+      white-space: nowrap;
+      color: #FFFFFF;
+      text-decoration: none;
+      line-height: 1.2;
+      font-weight: normal;
+      font-family: 'Akira';
+      font-size: 20px; /* Ridotto il valore del font-size */
+      background-color: rgb(224, 34, 113);
+      border-radius: 30px; /* Ridotto il valore del border-radius */
+      padding: 15px 40px; /* Ridotti i valori del padding */
+      border: 3px solid rgb(224, 34, 113); /* Ridotto il valore del border */
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+      /* Aggiunta della transizione */
+  }
 
+  #inviaButtonEM:hover{
+  background-color:#942bd0;
+  border-color: rgb(224, 34, 113);
+  }
+  
 
-/*QUI IL CSS DI "PROGETTO"*/
-
-
-.mio {
-  background-color: #942bd0;
-  color: black;
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  /* Aggiungi la distanza desiderata tra i blocchi */
-
-}
-
-.scarica {
-  color: rgb(30, 169, 60);
-  text-decoration: none;
-
-}
-
-.scarica:hover {
-  color: white;
-  transition: color 0.5s ease;
-  /* Aggiunta della transizione */
-
-}
-
-/*ALTRI CSS DELL'INDEX*/
-
-#logo{
-  width: 700px;  position: absolute;
-}
-
-#social {
-  float: right;
-  margin-right: 10px;
-  margin-top: 300px;
-  color: white;
-  position: relative;
-  font-size: 3em;
-}
-
-#linkedin {
-  transition: none;
-  transform: none !important;
-  color: white
-}
-
-#instagram {
-  transition: none;
-  transform: none !important;
-  color: white
-}
-
-#youtube {
-  transition: none;
-  transform: none !important;
-  color: white
-}
-
-.nero {
-  background-color: black;
-  border: 2px solid;
-  border-color: white;
-  height: auto;
-  padding: 20px;
-}
-
-.benvenuto {
-  color: #942bd0;
-  margin-top: 10px;
-  font-family: EX;
-  font-size: 70px;
-}
-
-.testo {
-  color: white;
-  font-size: 20px;
-  font-family: Helvetica, sans-serif;
-}
-
-code {
-  font-size: 20px;
-  margin-left: 20px;
-}
-
-.nelnero {
-  border: solid 2px;
-  border-color: white;
-  margin-top: 20px;
-  width: auto;
-  margin-bottom: 20px;
-}
-
-.statistiche{
-  color:rgb(0, 0, 0); font-size: 40px;  padding: 20px; font-family: Akira;
-}
-
-.programmazione {
-  padding: 5px;
-  border-radius: 30px 10px 30px 10px;
-  ;
-  background-color: #942bd0;
-  width: 600px;
-}
-
-.arte {
-  padding: 5px;
-  border-radius: 30px 10px 30px 10px;
-  ;
-  background-color: #942bd0;
-  width: 400px;
-  margin-top: 20px;
-}
-
-.forza {
-  padding: 5px;
-  border-radius: 30px 10px 30px 10px;
-  ;
-  background-color: #942bd0;
-  width: 700px;
-  margin-top: 20px;
-
-}
-
-.successo {
-  padding: 5px;
-  border-radius: 30px 10px 30px 10px;
-  background-color: #942bd0;
-  width: auto;
-  border-radius: 30px 10px 30px 10px;
-  margin-top: 20px;
-
-}
-
-.rondo1 {
-  color: #942bd0;
-  font-family: EX;
-  margin-top: 10px;
-  font-size: 25px;
-  margin-left: 20px;
-}
-
-.rondo2 {
-  color: white;
-  font-family: Helvetica, sans-serif;
-  font-size: 20px;
-  margin-left: 20px;
-}
-
-.rondo3 {
-  color: #942bd0;
-  font-family: EX;
-  font-size: 25px;
-  text-align: end;
-  margin-top: 10px;
-  margin-right: 20px;
-}
-
-.rondo4 {
-  color: white;
-  font-family: Helvetica, sans-serif;
-  font-size: 20px;
-  margin-right: 20px;
-  text-align: end;
-}
-
-.viola {
-  background-color: #942bd0;
-  border-radius: 20px;
-  height: 700px;
-  margin: 2px;
-  overflow: hidden;
-  position: relative;
-}
-
-.nelviola {
-  color: rgb(0, 0, 0);
-  font-size: 50px;
-  font-family: EX;
-  text-align: start;
-  padding-top: 110px;
-  position: relative;
-  margin-left: 20px;
-}
-
-#scrollImg {
-  height: 700px;
-  position: absolute;
-  right: -600px;
-  transform: translateX(-50%);
-  z-index: 0;
-}
-
-#stella1 {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  width: 100px;
-}
-
-#stella2 {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  width: 100px;
-}
-
-#stella3 {
-  margin-left: 10px;
-  width: 100px;
-}
-
-#stella4 {
-  float: right;
-  margin-right: 10px;
-  width: 100px;
-}
-
-.testonelviola {
-  color: black;
-  font-size: 20px;
-  font-family: Helvetica, sans-serif;
-  text-align: start;
-  margin-top: 0px;
-  margin-left: 20px;
-}
-
-.pos-btn {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-  z-index: 9999;
-}
+ 
