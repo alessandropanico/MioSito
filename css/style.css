@@ -290,23 +290,13 @@ nav a:hover {
   font-size: 3em;
 }
 
-#linkedin {
+#icona {
   transition: none;
   transform: none !important;
   color: white
 }
 
-#instagram {
-  transition: none;
-  transform: none !important;
-  color: white
-}
 
-#youtube {
-  transition: none;
-  transform: none !important;
-  color: white
-}
 
 .nero {
   background-color: black;
